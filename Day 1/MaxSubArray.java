@@ -9,6 +9,6 @@ class MaxSubArray {
             currentArr = Math.max(nums[i], currentArr+nums[i]);
             maxArr = Math.max(maxArr, currentArr);
         }
-     
+	return maxSubarray;     
     } 
 }

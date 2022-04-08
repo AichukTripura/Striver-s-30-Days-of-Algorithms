@@ -17,7 +17,7 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        Stack stk = new Stack();
+        Stack<TreeNode> stk = new Stack<>();
         TreeNode cur = root;
         List<Integer> res = new ArrayList<>();
         
@@ -30,6 +30,7 @@ class Solution {
             res.add(cur);
             cur = cur.right;
         }
+	return res;
             
     }
     
